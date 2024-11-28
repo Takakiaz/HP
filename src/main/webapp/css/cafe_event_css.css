@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.pagetitle{
+	background-image: url(./img/coffebean_01.png);
+	color: #fffacd;
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	padding: 20px;	
+	}
+	
+/* カレンダー */
+.calendar-table {
+  width: 80%;
+}
+
+table{
+border-collapse:collapse;
+
+}
+tr{
+border-bottom:1px dotted #6f4b3e;
+
+}
+
+.thDAY{
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	width:100px;
+	padding: 12px 2px;
+	
+}
+
+.thSUN{
+	text-align: center;
+	color: #b12727;
+	font-size: 18px;
+	width:100px;
+	padding: 12px 2px;
+	
+}
+.thSAT{
+	text-align: center;
+	color: #6298e7;
+	font-size: 18px;
+	width:100px;
+	padding: 12px 2px;
+	
+}
+
+.time{
+	text-align: left;
+	font-weight: bold;
+	font-size: 16px;
+	width:100px;
+	padding: 12px 2px;
+}
+
+.eventname{
+	text-align: left;
+	padding: 12px 2px;
+}
+
+.flex {
+  display: flex; /*横並び*/
+}
+
+.flex .image {
+  width: 600px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.flex .right {
+	width: 740px;
+  margin: 0 0 0 50px;
+  padding: 0px;
+}
+
+.box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3; /*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3; /*線*/
+    border-radius: 10px; /*角の丸み*/
+}
+.box p {
+    margin: 0; 
+    padding: 0;
+}

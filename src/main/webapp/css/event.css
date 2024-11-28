@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+
+
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body * {box-sizing: border-box;}
+html,body {
+	font-size: 14px;	/*基準となるフォントサイズ。*/
+}
+
+
+body {
+	margin:0 ;padding:0;
+	font-family: "M PLUS 1", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	-webkit-text-size-adjust: none;
+	background: #FFFACD;
+	color: #6F4B3E;/*文字色*/
+	line-height: 2;		/*行間*/
+}
+
+/*全体の両サイドの余白*/
+main {
+	margin: 5vw;	/*全体の外側に空けるスペース。*/
+}
+
+
+/*画像全般の設定、border:none＝枠線なし、max-widtf=画面の幅に対して画像を最大限広げる、height: auto＝画像の高さ自動調節、vertical-align: middle＝画像が画面の中央に表示*/
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+
+
+
+
+.pagetitle{
+	background-image: url(./img/event_pagetitle03.png);
+	color: #fffacd;
+	text-align: center;
+	width: 100%;
+	height: 350px;
+	padding: 20px;	
+	}
+	
+.pagetitle h1 { 
+	font-size:4rem; /* フォントサイズを4倍に設定*/ 
+	margin-top: 3cm; /* 文字を下に3センチ移動 */
+	color: #FFFACD; /* 文字色をFFFACDに設定 */
+	}
+	
+/* カレンダー */
+.calendar-table {
+  width: 90%;
+}
+
+
+
+/* 二重線を重ねて一重線にしたいとき */
+table, td, th {
+  border: 1px solid #6f4b3e;
+  border-spacing:0;
+  border-collapse:collapse;
+}
+
+
+table,th{
+	text-align: center;
+	font-size: 16px;
+	width:100px;
+	padding: 4px 2px;
+	background-color: #f3f3f3;
+}
+
+table,td{
+	text-align: left;
+	font-size: 16px;
+	padding: 4px 10px;
+	background-color: white;
+}
+
+.DAY{
+	color: #6f4b3e;	
+}
+
+.SUN{
+	color: #b12727;
+}
+.SAT{
+	color: #6298e7;
+}
+
+.time{
+	text-align: left;
+	font-size: 14px;
+}
+
+.eventname{
+	text-align: left;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.flex {
+  display: flex; /*横並び*/
+}
+
+.flex .image {
+  width: 600px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.flex .right {
+  width: 740px;
+  margin: 0 0 0 50px;
+  padding: 0px;
+}
+
+.box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6F4B3E; /*文字色*/
+    background: #FFF;
+    border: solid 3px #6F4B3E; /*線*/
+    border-radius: 10px; /*角の丸み*/
+}
+.box p {
+    margin: 1em; 
+    padding: 1em;
+	
+
+}

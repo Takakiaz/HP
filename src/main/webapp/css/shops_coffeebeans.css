@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+body{
+	background-color: #fffacd;
+}
+
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breadcrumbs li {
+	display: inline;
+	list-style: none;
+	font-weight: bold;
+}
+
+.breadcrumb li:after {/* >を表示*/
+  content: '>';
+  padding: 0 0.2em;
+  color: #555;
+}
+
+.breadcrumb li:last_child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: rgb(128, 0, 0);
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.main_nav {
+	text-align: center;
+}
+.main_nav li{
+	margin-right: 50px;
+	display: inline;
+	list-style: none;
+	font-weight: bold;
+	
+}
+
+.main_nav a {
+	display: inline-block;
+	padding: 16px 40px;
+	border-radius: 30px;
+	text-decoration: none;
+	color:#FFFFFF;
+	background: rgb(128, 64, 64);
+	font-size: 10px;
+	line-height: 30px;
+}
+
+.product_wrapper {
+	width: 850px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.product_wrapper h2 {
+	text-align: center;
+	font-size: 40px;
+	border-bottom: 1px solid black;
+}
+
+
+
+.sort-options {
+	width: 850px;
+	margin: 0 auto;
+    margin-top: 2px;
+    text-align: right;
+}
+
+#sort {
+	margin-left: 5px;
+	
+}
+
+.sort-options select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+
+.product_lists {
+	width: 850px;
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	
+}
+
+.product_lists li {
+	flex-basis: 250px;
+	list-style: none;
+	margin-right: 100px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none
+}
+
+.product_lists img {
+	border-radius: 30px;
+	width: 300px;
+	height: 300px;
+}
+
+
+.product_list_text {
+	padding: 20px 0 20px 20px;	
+}
+
+.product_lists span {
+	font-weight: bold;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
+/*フッター共通
+---------------------------------------------------------------------------*/
+#footer-contents, #footermenu {
+	padding: 2rem var(--global-space);	/*上下、左右へのボックス内の余白。左右はcss冒頭で指定しているglobal-spaceを読み込みます*/
+}
+
+
+/*フッターのコンテンツ（住所やマップが入っているブロック）
+---------------------------------------------------------------------------*/
+/*ブロック全体*/
+#footer-contents {
+	background: #6a6462;	/*背景色*/
+	color: #fff;			/*文字色*/
+}
+#footer-contents a {
+	color: inherit;
+}
+
+/*左側のブロック*/
+#footer-contents .left {
+	margin-bottom: 50px;	/*下に空けるスペース*/
+}
+
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+	
+	#footer-contents {
+		display: flex;	/*flexボックスを使う指定*/
+		gap: 2rem;		/*左右のボックスの間のマージン的な設定*/
+	}
+	
+	/*左側のブロック*/
+	#footer-contents .left {
+		margin-bottom: 0;	/*下のマージン（外側への余白）をリセット*/
+		width: 50%;			/*幅。leftとrightで合計100になれば、お好みで変更してもらって構いません。*/
+	}
+	
+	/*右側のブロック*/
+	#footer-contents .right {
+		width: 50%;			/*幅。leftとrightで合計100になれば、お好みで変更してもらって構いません。*/
+	}
+
+	}/*追加指定ここまで*/
+
+
+
+/*footer-contents内のマップ。レスポンシブにする為のものなので、基本は編集不要です。
+---------------------------------------------------------------------------*/
+.iframe-box {
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;	/*マップの高さを増やしたい場合は、ここの数値を上げてみて下さい。*/
+	position: relative;
+	overflow: hidden;
+}
+.iframe-box iframe {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*フッターメニュー設定
+--/*フッター共通
+---------------------------------------------------------------------------*/
+#footer-contents, #footermenu {
+	padding: 2rem var(--global-space);	/*上下、左右へのボックス内の余白。左右はcss冒頭で指定しているglobal-spaceを読み込みます*/
+}
+
+
+/*フッターのコンテンツ（住所やマップが入っているブロック）
+---------------------------------------------------------------------------*/
+/*ブロック全体*/
+#footer-contents {
+	background: #6a6462;	/*背景色*/
+	color: #fff;			/*文字色*/
+}
+#footer-contents a {
+	color: inherit;
+}
+
+/*左側のブロック*/
+#footer-contents .left {
+	margin-bottom: 50px;	/*下に空けるスペース*/
+}
+
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+	
+	#footer-contents {
+		display: flex;	/*flexボックスを使う指定*/
+		gap: 2rem;		/*左右のボックスの間のマージン的な設定*/
+	}
+	
+	/*左側のブロック*/
+	#footer-contents .left {
+		margin-bottom: 0;	/*下のマージン（外側への余白）をリセット*/
+		width: 50%;			/*幅。leftとrightで合計100になれば、お好みで変更してもらって構いません。*/
+	}
+	
+	/*右側のブロック*/
+	#footer-contents .right {
+		width: 50%;			/*幅。leftとrightで合計100になれば、お好みで変更してもらって構いません。*/
+	}
+
+	}/*追加指定ここまで*/
+
+
+
+/*footer-contents内のマップ。レスポンシブにする為のものなので、基本は編集不要です。
+---------------------------------------------------------------------------*/
+.iframe-box {
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;	/*マップの高さを増やしたい場合は、ここの数値を上げてみて下さい。*/
+	position: relative;
+	overflow: hidden;
+}
+.iframe-box iframe {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*フッターメニュー設定
+---------------------------------------------------------------------------*/
+/*ボックス全体の設定*/
+#footermenu {
+	background: #363332;	/*背景色*/
+	color: #fff;			/*文字色*/
+	font-size: 0.8rem;		/*文字サイズ。*/
+	display: flex;			/*flexボックスを使う指定*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+	align-items: flex-start;		/*垂直揃えの指定。上に配置されるように。*/
+}
+
+/*ボックス内のリンクテキスト設定*/
+#footermenu a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*ulタグ（メニューの１列あたり）*/
+#footermenu ul {
+	margin: 0;list-style: none;
+	padding: 0 0.3em;
+	flex: 1;
+}
+
+/*メニューの見出し(title)*/
+#footermenu .title {
+	font-weight: bold;		/*太字にする*/
+	color: #ccc;			/*文字色*/
+	padding-bottom: 5px;	/*下に空けるスペース*/
+}
+
+
+/*フッター設定
+---------------------------------------------------------------------------*/
+small {font-size: 100%;}
+footer {
+	font-size: 0.7rem;		/*文字サイズ*/
+	background: #1d1b1b;	/*背景色*/
+	color: #fff;			/*文字色*/
+	text-align: center;		/*内容をセンタリング*/
+	padding: 1rem;			/*ボックス内の余白*/
+}
+
+/*リンクテキスト*/
+footer a {color: inherit;text-decoration: none;}
+
+/*著作部分*/
+footer .pr {display: block;}
+
+
+/*フッター内にあるソーシャルメディアのアイコン
+---------------------------------------------------------------------------*/
+ul.icons {
+	list-style: none;
+	margin: 0;padding: 0;
+	display: flex;
+	align-self: center;
+	gap: 1rem;	/*アイコン同士のマージン的な要素。１文字分。*/
+}
+.icons i {
+	font-size: 40px;	/*アイコンサイズ*/
+}-------------------------------------------------------------------------*/
+/*ボックス全体の設定*/
+#footermenu {
+	background: #363332;	/*背景色*/
+	color: #fff;			/*文字色*/
+	font-size: 0.8rem;		/*文字サイズ。*/
+	display: flex;			/*flexボックスを使う指定*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+	align-items: flex-start;		/*垂直揃えの指定。上に配置されるように。*/
+}
+
+/*ボックス内のリンクテキスト設定*/
+#footermenu a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*ulタグ（メニューの１列あたり）*/
+#footermenu ul {
+	margin: 0;list-style: none;
+	padding: 0 0.3em;
+	flex: 1;
+}
+
+/*メニューの見出し(title)*/
+#footermenu .title {
+	font-weight: bold;		/*太字にする*/
+	color: #ccc;			/*文字色*/
+	padding-bottom: 5px;	/*下に空けるスペース*/
+}
+
+
+/*フッター設定
+---------------------------------------------------------------------------*/
+small {font-size: 100%;}
+footer {
+	font-size: 0.7rem;		/*文字サイズ*/
+	background: #1d1b1b;	/*背景色*/
+	color: #fff;			/*文字色*/
+	text-align: center;		/*内容をセンタリング*/
+	padding: 1rem;			/*ボックス内の余白*/
+}

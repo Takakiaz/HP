@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/*一番上の画像について
+---------------------------------------------------------------------------*/
+.menu{ 
+	background-image: url(./練習/img/been.jpg);
+	text-align: center; 
+	width: 100%;
+	height: 350px; 
+	color: white;
+	margin-bottom:40px;
+} 
+
+.menu h1 { 
+	font-size:4rem; /* フォントサイズを4倍に設定*/ 
+	margin-top: 3cm; /* 文字を下に3センチ移動 */
+	color: #FFFACD; /* 文字色をFFFACDに設定 */
+}
+
+body:not(.home) header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0rem 0vw;	/*上下、左右への画像の余白。*/
+}
+
+
+/*サイト全体を一括管理する為の設定
+---------------------------------------------------------------------------*/
+:root {
+
+	/*テンプレートのメインまたはアクセントとなる色*/
+	--primary-color: #6F4B3E;
+	
+	/*上のprimary-colorの対となる色*/
+	--primary-inverse-color: #FFFACD;
+	
+	/*サイト内の左右へとる余白。画面幅100%＝100vw*/
+	--global-space: 5vw;
+}
+
+
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body * {box-sizing: border-box;}
+html,body {
+	font-size: 13px;	/*基準となるフォントサイズ。*/
+}
+
+
+body {
+	margin: 0;padding:0;
+	font-family: "M PLUS 1", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	-webkit-text-size-adjust: none;
+	background: #FFFACD;
+	color: #6F4B3E;/*文字色*/
+	line-height: 2;		/*行間*/
+}
+
+
+
+/*画像全般の設定、border:none＝枠線なし、max-widtf=画面の幅に対して画像を最大限広げる、height: auto＝画像の高さ自動調節、vertical-align: middle＝画像が画面の中央に表示*/
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+
+
+
+/*メニュー表全体の設定
+---------------------------------------------------------------------------*/
+
+/*メニュー表全体の両サイドの余白*/
+main {
+	margin: 5vw;	/*メニュー表全体の外側に空けるスペース。*/
+}
+
+/*両側のDRINKMENU、FOODMENの文字の設定*/
+main h2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 2rem;		/*h2の外側にとるスペース。上、左右、下への順番。*/
+	font-size: 1.5rem;		/*文字サイズ*/
+	position: relative;		/*ulineを配置する為に必要な指定*/
+	font-weight: normal;	/*デフォルトの太字を標準に*/
+	border-bottom: 2px solid #6F4B3E;	/*線の幅、線種、色*/
+	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くする*/
+}
+
+
+/*右側のDRINKMENU、FOODMENの文字の設定*/
+main h2 .small {
+	font-size: 60%;	/*文字サイズを左のDRINKMENU、FOODMENUの大きさの60%に*/
+	opacity: 70%;		/*透明度。色が70%出た状態。*/
+}
+
+
+
+/*フッター設定
+---------------------------------------------------------------------------*/
+footer small {font-size: 100%;}
+footer {
+	font-size: 70%;		/*文字サイズ。bodyのfont-sizeの70%です。*/
+	text-align: center;		/*文字を真ん中に*/
+	padding: 20px;			/*ボックス内の余白*/
+}
+
+/*リンクテキスト*/
+footer a {color:#6F4B3E;}
+
+
+/*メニューページ
+---------------------------------------------------------------------------*/
+
+.list-menu {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);	/*２列にする。３列がいいなら、(3, 1fr)とすればOK。*/
+	gap: 2rem;	/*写真ブロック同士の間をどのくらい空けるか。*/
+	margin-bottom: 5vw;	/*4つ並んだ写真の下に空けるスペース。*/
+}
+
+	/*全てのデバイスで、画面幅が1400px以上の時に下のcssが適用される。1400以下の例えばスマホなどの小さいデバイスは適用外。*/
+	@media screen and (min-width:1400px) {
+
+	.list-menu {
+		grid-template-columns: repeat(4, 1fr);	/*写真を4つ並べる*/
+	}
+
+	}/*追加指定ここまで*/
+
+
+/*list（メニュー写真や説明が入ったボックス一個あたり）
+---------------------------------------------------------------------------*/
+/*list内の全ての余白(margin)を一旦リセットすることで、余白を設定しやすくなる。*/
+.list * {
+	margin: 0;
+}
+
+/*ボックス１個あたり*/
+.list {
+	position: relative;
+    display: flex;
+	flex-direction: column;
+	padding: 1rem;			/*白いボックスの余白*/
+	background: #fff;		/*写真周りのボックスの色(背景色)*/
+	color:#6F4B3E;      /*メニュータイトルと、メニューの説明の文字色*/
+}
+
+
+/*価格の丸いアイコン*/
+.list h4 .price {
+	background: #FFFACD;	/*背景色*/
+	font-weight: normal;	/*h要素のデフォルトの太字を標準にする*/
+	border-radius: 100px;	/*アイコンの角を丸くする。*/
+	padding: 0.3rem 1rem;	/*アイコン内の余白。上下、左右へ。*/
+	margin-left: 1rem;		/*メニュータイトルの後ろに、1文字分のスペースを空ける。*/
+	font-size: 0.8rem;		/*文字サイズを80%に*/
+}
+
+
+/*おすすめの丸いアイコン*/
+.list .newicon {
+	position: absolute;
+	left: -5px;	/*数を増やすと右に移動し、数を減らすと左に移動。*/
+	top: -10px;	/*数を増やすと下に移動し、数を減らすと上に移動。*/
+	background: #6F4B3E;	/*背景色*/
+	color: #FFFACD;	/*背景色*/
+	font-size: 70%;	/*文字サイズ*/
+	width: 5em;			/*アイコンの幅。4文字分。*/
+	line-height: 5em;	/*上のwidthとサイズを揃えれば丸になる。*/
+	border-radius: 50%;	/*丸の形にする指定。*/
+	text-align: center;	/*テキストを真ん中に*/
+}

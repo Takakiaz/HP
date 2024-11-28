@@ -67,7 +67,6 @@ body {
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 
 
-
 /*メニュー表全体の設定
 ---------------------------------------------------------------------------*/
 
@@ -172,4 +171,30 @@ footer a {color:#6F4B3E;}
 	line-height: 5em;	/*上のwidthとサイズを揃えれば丸になる。*/
 	border-radius: 50%;	/*丸の形にする指定。*/
 	text-align: center;	/*テキストを真ん中に*/
+}
+
+/*３本バー（ハンバーガー）アイコン設定
+---------------------------------------------------------------------------*/
+/*３本バーを囲む四角いブロック*/
+#menubar_hdr {
+	animation: opa1 0s 0.2s both;
+	position: fixed;z-index: 101;
+	cursor: pointer;
+	right: 1vw;				/*右からの配置場所指定*/
+	top: 2vw;				/*上からの配置場所指定*/
+	padding: 16px 14px;		/*上下、左右への余白*/
+	width: 46px;			/*幅（３本バーが出ている場合の幅になります）*/
+	height: 46px;			/*高さ*/
+	display: flex;					/*flexボックスを使う指定*/
+	flex-direction: column;			/*子要素（３本バー）部分。flexはデフォルトで横並びになるので、それを縦並びに変更。*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+	background: white;	/*背景色*/
+	border: 3px solid #6F4B3E; /* 枠線の幅、線種、色（こげ茶色）を設定 */
+}
+
+/*バー１本あたりの設定*/
+#menubar_hdr span {
+	display: block;
+	transition: 0.3s;	/*アニメーションにかける時間。0.3秒。*/
+	border-top: 3px solid #6F4B3E;	/*線の幅、線種、色*/
 }

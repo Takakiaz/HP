@@ -6,13 +6,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="おいしい珈琲屋さんで開催しているイベントの情報です。">
 <link rel="stylesheet" type="text/css" href="event.css">
+<link rel="stylesheet" type="text/css" href="han.css">
 </head>
 
 <body>
+<!-- ハンバーガーメニューはじめ-->
+<header class="header">
+	<div>
+		<a href="./top.html"><img src="./img/nikukyu_mike.png" width="50px" height="50px">ロゴ代用</a>
+	</div>
+	 <div class="nav">
+	<!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+	 <input id="drawer_input" class="drawer_hidden" type="checkbox">
+		 
+	<!-- ハンバーガーアイコン -->
+	<label for="drawer_input" class="drawer_open"><span></span></label>
+		 
+	<!-- メニュー -->
+	<nav class="nav_content">
+		<ul class="nav_list">
+			<li class="nav_item"><a href="./top_index.html">HOME</a></li>
+		    <li class="nav_item"><a href="./menu_cafe.html">MENU</a></li>
+		    <li class="nav_item"><a href="./shops_coffeebeans.html">SHOP</a></li>
+			<li class="nav_item"><a href="./book.html">BOOK</a></li>
+			<li class="nav_item"><a href="./event.html">EVENT</a></li>
+		</ul>
+	</nav>
+	</div>
+</header>
+<!-- ハンバーガーメニュー終わり-->
+
+<!-- ページタイトル -->		 
 <div class="pagetitle">
-	<h1>イベント</h1>
+	<h1>EVENT</h1>
 </div>
-<main>	
+<!-- ページタイトル終わり -->
+
+<main>	<!-- コンテンツすべてをまとめ。全体の両サイドの余白調整のため -->	
 	<p class="description">
 	12月に行われるイベントカレンダーです。
 	</p>
@@ -49,14 +79,120 @@
 			</td>
 		</tr>
 		<tr>
-			<th class="DAY">2(月)<br/>3(火)<br/>4(水)<br/>5(木)<br/>6(金)</th>
+			<th class="DAY">9(月)</th>
 			<td>
-				<div class="eventname">瀧本幹也 写真展「MONACO Gracieux」<br/></div>
+				<div class="eventname">オリジナルマグカップ作り体験-ボサノヴァを聴きながら-<br/></div>
+				<div class="time">14:00～16:00</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="DAY">10(火)</th>
+			<td>
+				<div class="eventname">和モダンしめ縄作りワークショップ<br/></div>
+				<div class="time">14:00～16:30</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="DAY">11(水)</th>
+			<td>
+				<div class="eventname">マスター直伝「お家で楽しむ珈琲 ハンドドリップ教室」<br/></div>
+				<div class="time">13:30～15:00</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="DAY">12(木)</th>
+			<td>
+				<div class="eventname">マスター直伝「お家で楽しむ珈琲 ラテアート教室」<br/></div>
+				<div class="time">13:30～15:00</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="DAY">13(金)</th>
+			<td>
+				<div class="eventname">玉置浩二 Concert Tour 2024 Resume 〜レジューム 新たな始まり〜<br/></div>
+				<div class="time">開場 19:00／開演 19:30</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="SAT">14(土)</th>
+			<td>
+				<div class="eventname">Stray Kids World Tour ＜dominATE JAPAN＞<br/></div>
+				<div class="time">開場 17:30／開演 18:00</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="SUN">15(日)</th>
+			<td>
+				<div class="eventname">aiko Live Tour「Love Like Rock vol.10」<br/></div>
+				<div class="time">開場 16:30／開演 17:00</div>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<div class="DAY">16(月)<br/>17(火)<br/>18(水)<br/>19(木)<br/>20(金)</div>
+				<div class="SAT">21(土)</div>
+				<div class="SUN">22(日)</div>
+			</th>
+			<td>
+				<div class="eventname">MINIATURE LIFE(ミニチュアライフ)展　-田中達也　見立ての世界-<br/></div>
 				<div class="time">10:00～19:00</div>
 			</td>
 		</tr>
-		
+		<tr>
+			<th class="DAY">23(月)</th>
+			<td>
+				<div class="eventname">吉田次郎プロデュース WINTER JAZZ LIVE<br/></div>
+				<div class="time">開場 19:00／開演 19:30</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="DAY">24(火)</th>
+			<td>
+				<div class="eventname">小曽根真 ピアノ ソロ「クラシック×ジャズ」<br/></div>
+				<div class="time">開場 19:00／開演 19:30</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="DAY">25(水)</th>
+			<td>
+				<div class="eventname">古澤巖 × ベルリン・フィルハーモニック ストリングス　～クリスマスに贈る～<br/></div>
+				<div class="time">開場 19:00／開演 19:30</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="DAY">26(木)</th>
+			<td>
+				<div class="eventname">スタニスラフ・ブーニン ピアノ・リサイタル<br/></div>
+				<div class="time">開場 19:00／開演 19:30</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="DAY">27(金)</th>
+			<td>
+				<div class="eventname">HIMARIヴァイオリン・デビューリサイタルツアー<br/></div>
+				<div class="time">開場 19:00／開演 19:30</div>
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<div class="SAT">28(土)</div>
+				<div class="SUN">29(日)</div>
+				<div class="DAY">30(月)</div>
+			</th>
+			<td>
+				<div class="eventname">博多人形 「巳」 の干支と縁起物展<br/></div>
+				<div class="time">10:00～19:00</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="DAY">31(火)</th>
+			<td>
+				<div class="eventname">おいしい珈琲屋さんカウントダウンライブ2024-2025<br/></div>
+				<div class="time">開場 19:00／開演 19:30</div>
+			</td>
+		</tr>
 
+		
 		</tbody>
 	</table>
 </section>
@@ -76,16 +212,25 @@
 	<li>ジャズバンド演奏会</li>
 	<li>写真展</li>
 	<li>ハンドメイド作品販売会</li>
-	<li>しめ縄作り体験</li>
+	<li>しめ縄作りワークショップ</li>
 </ul>
 <p>
-	<a href="event_form.html" class="box">お問い合わせはこちら></a>
+	<a href="event_form.html" class="box">お問い合わせはこちら</a>
 </p>
 </div>
 </div>
 
 </section>
 </main>
+
+<a href="#" id="page-top">TOP</a>
+
+<!--/#footermenu-->
+
+	<footer>
+	<small>Copyright&copy; <a href="../task_take/top_index.html">おいしい珈琲屋さん</a> All Rights Reserved.</small>
+	<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+	</footer>
 
 </body>
 </html>

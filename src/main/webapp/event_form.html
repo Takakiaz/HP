@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>フォーム|イベント情報|おいしい珈琲屋さん</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="おいしい珈琲屋さんで開催しているイベントの応募フォームです。">
+<link rel="stylesheet" type="text/css" href="event_form.css">
+</head>
+<body>
+	<h2>お問い合わせフォーム</h2>
+	<p class="comment">
+		以下フォームよりお気軽にお問い合わせください。<br/>
+		内容確認後、担当者よりメールまたはお電話にてご連絡させていただきます。
+	</p>
+	<form id="eventform" name="eventform" action="event_form.html" method="get">
+		<table class="ta1">	
+			<tr>
+				<th>お名前（代表者）</th>
+				<td><input type="text" name="name" size="30" class="ws"></td>
+			</tr>
+			<tr>
+				<th>団体名</th>
+				<td><input type="text" name="groupname" size="30" class="ws"></td>
+			</tr>
+			<tr>
+				<th>イベント実施日</th>
+				<td><input type="text" name="day" size="30" class="ws"></td>
+			</tr>
+			<tr>
+				<th>イベント概要</th>
+				<td><select name="eventtype">
+					<option value="0">音楽イベント</option>
+					<option value="1">展示会</option>
+					<option value="2">その他</option>
+					</select></td>
+			</tr>
+			<tr>
+				<th>イベント詳細</th>
+				<td><textarea name="comment" cols="30" rows="10" class="wl"></textarea></td>
+			</tr>
+			<tr>
+				<th>電話番号</th>
+				<td><input type="text" name="tel" size="30" class="ws"></td>
+			</tr>
+			<tr>
+				<th>メールアドレス</th>
+				<td><input type="text" name="tel" size="30" class="ws"></td>
+			</tr>
+			</table>
+			<p class="sendbtn">
+			<input type="submit" value="送信"/>
+			</p>
+	</form>
+
+</body>
+</html>

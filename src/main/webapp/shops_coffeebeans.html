@@ -4,30 +4,43 @@
 <meta charset="UTF-8">
 <title>コーヒー豆</title>
 <link rel="stylesheet" href="./css/shops_coffeebeans.css">
+<link rel="stylesheet" href="./css/han.css">
 </head>
 <body>
 	<div>
 		<header class="header">
-			<div class="header_menu">
-				<a href=""></a>
+			<div>
+				<a href="./top.html"><img src="./img/nikukyu_mike.png" width="50px" height="50px">ロゴ代用</a>
 			</div>
-			<div class="header_logo">
-				<p></p>
-			</div>
-			<label for="drower_input"><span></span></label>
+			<div class="nav">
+		     <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+		     <input id="drawer_input" class="drawer_hidden" type="checkbox">
+		 
+		     <!-- ハンバーガーアイコン -->
+		     <label for="drawer_input" class="drawer_open"><span></span></label>
+		 
+		     <!-- メニュー -->
 			<nav class="nav_content">
-				<ul class="nav_list">
-					<li class="nav_item"><a href="">メニュー</a></li>
-					<li class="nav_item"><a href="">アカウント</a></li>
-					<li class="nav_item"><a href="">オンラインショップ</a></li>
-					<li class="nav_item"><a href="">お問い合わせ</a></li>
-				</ul>
-			</nav>
+		       <ul class="nav_list">
+		         <li class="nav_item"><a href="./top_index.html">HOME</a></li>
+		         <li class="nav_item"><a href="">MENU</a></li>
+		         <li class="nav_item"><a href="">SHOP</a></li>
+				 <li class="nav_item"><a href="">BOOK</a></li>
+				 <li class="nav_item"><a href="">EVENT</a></li>
+		       </ul>
+			</nav>		   
+			</div>
 		</header>
 		<main>
-			<ul class="breadcrumbs">
-				<li><a href="top_index.html">ホーム</a></li>
-			</ul>
+			<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+			  <li itemprop="itemListElement" itemscope
+			      itemtype="https://schema.org/ListItem">
+			    <a itemprop="item" href="./top_index.html">
+			        <span itemprop="name">ホーム</span>
+			    </a>
+			    <meta itemprop="position" content="1" />
+			  </li>
+			</ol>
 			<nav class="main_nav_wrapper">
 				<ul class="main_nav">
 					<li><a href="">コーヒー豆</a></li>
@@ -49,7 +62,7 @@
 					<li>
 						<a href="./coffeebeans_item_01.html" class="product_list">
 							<div class="product_list_img">
-								<img src="./img/coffeebeans_01.jpg">
+								<img src="./img/coffeebeans_special_01.jpg">
 							</div>
 							<p class="product_list_text">
 								<span>スペシャルブレンド　500g<br/>1000円</span>
@@ -65,7 +78,7 @@
 					<li>
 						<a href="./coffeebeans_item_02.html" class="product_list">
 							<div class="product_list_img">
-								<img src="./img/coffeebeans_01.jpg">
+								<img src="./img/coffeebeans_special_01.jpg">
 							</div>
 							<p class="product_list_text">
 								<span>ジェノバブレンド　500g<br/>1000円</span>
@@ -81,7 +94,7 @@
 					<li>
 						<a href="" class="product_list">
 							<div class="product_list_img">
-								<img src="./img/coffeebeans_01.jpg">
+								<img src="./img/coffeebeans_special_01.jpg">
 							</div>
 							<p class="product_list_text">
 								<span>スペシャルブレンド　500g<br/>1000円</span>

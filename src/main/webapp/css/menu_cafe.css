@@ -1,9 +1,126 @@
 @charset "utf-8";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: #fff;
+}
+  
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;/* 重なり順を一番上にする */
+  cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 8px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 8px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+  
+/* メニューのデザイン*/
+.nav_content {
+  width: 90%;
+  height: 90%;
+  position: fixed;
+  top: 0;
+  left: 200%; /* 横幅分右側に移動することで消えてるように見せる メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: #fff;
+  transition: .5s;
+  opacity: 0.8;
+  
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+  list-style: none;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  left: 85%;/* メニューを画面に入れる */
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/***追従するトップへ戻るボタン***/
+/*HTML		bodyへ <a href="#" id="page-top">TOP</a>	を入れるとボタンが表示されます*/
+#page-top {
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: rgb(104, 104, 104);
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+}
+#page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 1px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}
 
 /*一番上の画像について
 ---------------------------------------------------------------------------*/
 .menu{ 
-	background-image: url(./練習/img/been.jpg);
+	background-image: url(./練習/img/menu_01.jpg);
 	text-align: center; 
 	width: 100%;
 	height: 350px; 
@@ -99,16 +216,35 @@ main h2 .small {
 
 /*フッター設定
 ---------------------------------------------------------------------------*/
+#footer-contents, #footermenu {
+	padding: 2rem var(--global-space);	/*上下、左右へのボックス内の余白。左右はcss冒頭で指定しているglobal-spaceを読み込みます*/
+}
+
 footer small {font-size: 100%;}
 footer {
 	font-size: 70%;		/*文字サイズ。bodyのfont-sizeの70%です。*/
+	background: #1d1b1b;	/*背景色*/
+	color: #fff;			/*文字色*/
 	text-align: center;		/*文字を真ん中に*/
 	padding: 20px;			/*ボックス内の余白*/
 }
 
 /*リンクテキスト*/
-footer a {color:#6F4B3E;}
+footer a {color:#fff}
 
+/*ulタグ（メニューの１列あたり）*/
+#footermenu ul {
+	margin: 0;list-style: none;
+	padding: 0 0.3em;
+	flex: 1;
+}
+
+/*メニューの見出し(title)*/
+#footermenu .title {
+	font-weight: bold;		/*太字にする*/
+	color: #ccc;			/*文字色*/
+	padding-bottom: 5px;	/*下に空けるスペース*/
+}
 
 /*メニューページ
 ---------------------------------------------------------------------------*/
@@ -173,28 +309,21 @@ footer a {color:#6F4B3E;}
 	text-align: center;	/*テキストを真ん中に*/
 }
 
-/*３本バー（ハンバーガー）アイコン設定
----------------------------------------------------------------------------*/
-/*３本バーを囲む四角いブロック*/
-#menubar_hdr {
-	animation: opa1 0s 0.2s both;
-	position: fixed;z-index: 101;
-	cursor: pointer;
-	right: 1vw;				/*右からの配置場所指定*/
-	top: 2vw;				/*上からの配置場所指定*/
-	padding: 16px 14px;		/*上下、左右への余白*/
-	width: 46px;			/*幅（３本バーが出ている場合の幅になります）*/
-	height: 46px;			/*高さ*/
-	display: flex;					/*flexボックスを使う指定*/
-	flex-direction: column;			/*子要素（３本バー）部分。flexはデフォルトで横並びになるので、それを縦並びに変更。*/
-	justify-content: space-between;	/*並びかたの種類の指定*/
-	background: white;	/*背景色*/
-	border: 3px solid #6F4B3E; /* 枠線の幅、線種、色（こげ茶色）を設定 */
-}
 
-/*バー１本あたりの設定*/
-#menubar_hdr span {
-	display: block;
-	transition: 0.3s;	/*アニメーションにかける時間。0.3秒。*/
-	border-top: 3px solid #6F4B3E;	/*線の幅、線種、色*/
+/*ページのトップにとばすボタンについて
+---------------------------------------------------------------------------*/
+.pagetop-show {display: block;}
+
+/*ボタンの設定*/
+.pagetop a {
+	display: block;text-decoration: none;text-align: center;z-index: 99;
+	position: fixed;	/*スクロールに追従しない(固定で表示)為の設定*/
+	right: 20px;		/*右からの配置場所指定*/
+	bottom: 20px;		/*下からの配置場所指定*/
+	color: #fff;		/*文字色*/
+	font-size: 1.5rem;	/*文字サイズ*/
+	background: rgba(0,0,0,0.2);	/*背景色。0,0,0は黒の事で0.2は色が20%出た状態。*/
+	width: 60px;		/*幅*/
+	line-height: 60px;	/*高さ*/
+	border-radius: 50%;	/*円形にする*/
 }

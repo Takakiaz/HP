@@ -1,24 +1,46 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>おいしい珈琲屋さん</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ここにサイト説明を入れます">
-<link rel="stylesheet" type="text/css" href="menu_cafe.css">
+<title>おいしい珈琲屋さん 本リスト</title>
+	<link rel="stylesheet" href="./css/han.css" type="text/css">
+	<link rel="stylesheet" href="./menu_cafe.css" type="text/css">
 </head>
-
 <body>
-
-<div id="trigger-point">
-
+	<!-- ハンバーガーメニューはじめ-->
+	<header class="header">
+		<div>
+			<a href="./top.html"><img src="./img/nikukyu_mike.png" width="50px" height="50px">ロゴ代用</a>
+		</div>
+	   <div class="nav">
+	     <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+	     <input id="drawer_input" class="drawer_hidden" type="checkbox">
+	 
+	     <!-- ハンバーガーアイコン -->
+	     <label for="drawer_input" class="drawer_open"><span></span></label>
+	 
+	     <!-- メニュー -->
+	     <nav class="nav_content">
+	       <ul class="nav_list">
+	         <li class="nav_item"><a href="./top_index.html">HOME</a></li>
+	         <li class="nav_item"><a href="./menu_cafe.html">MENU</a></li>
+	         <li class="nav_item"><a href="./shops_coffeebeans.html">SHOP</a></li>
+			 <li class="nav_item"><a href="./book.html">BOOK</a></li>
+			 <li class="nav_item"><a href="./event.html">EVENT</a></li>
+	       </ul>
+	     </nav>		   
+	   </div>
+	 </header>
+	 <!-- ハンバーガーメニュー終わり-->
+	 
+<div>					 
 <header>
 	<div class="menu">
 		<h1>MENU</h1>
 	</div>
 </header>
-
 </div>
+
 <!--/#trigger-point-->
 
 
@@ -33,7 +55,7 @@
 <div class="list-menu">
 
 <div class="list up">
-<figure><img src="./練習/img/R.jfif" alt=""></figure>
+<figure><img src="./練習/img/menu_02.jfif" alt=""></figure>
 <div class="text">
 <h4>ブレンドコーヒー<span class="price">500yen</span></h4>
 <p>当店独自の抽出による本格的なブレンドコーヒー</p>
@@ -42,7 +64,7 @@
 </div>
 
 <div class="list up">
-<figure><img src="./練習/img/5-1-1.jpg" alt=""></figure>
+<figure><img src="./練習/img/menu_03.jpg" alt=""></figure>
 <div class="text">
 <h4>アメリカンコーヒー<span class="price">500yen</span></h4>
 <p>浅煎り豆ならではの酸味や軽さのある飲み心地が特徴</p>
@@ -50,7 +72,7 @@
 </div>
 
 <div class="list up">
-<figure><img src="./練習/img/iced-coffee.webp" alt=""></figure>
+<figure><img src="./練習/img/menu_04.webp" alt=""></figure>
 <div class="text">
 <h4>ドリップアイスコーヒー<span class="price">500yen</span></h4>
 <p>雑味が少なくすっきりとした飲み口が特徴</p>
@@ -58,7 +80,7 @@
 </div>
 
 <div class="list up">
-<figure><img src="./練習/img/cafeore.jpeg" alt=""></figure>
+<figure><img src="./練習/img/menu_05.jpeg" alt=""></figure>
 <div class="text">
 <h4>カフェ・オーレ<span class="price">500yen</span></h4>
 <p>コーヒーとミルクをミックスしたやわらかいコーヒー</p>
@@ -77,7 +99,7 @@
 <div class="list-menu">
 
 <div class="list up">
-<figure><img src="./練習/img/cake.webp" alt=""></figure>
+<figure><img src="./練習/img/menu_06.webp" alt=""></figure>
 <div class="text">
 <h4>モンブラン<span class="price">600yen</span></h4>
 <p>国産和栗のモンブランプレート</p>
@@ -86,7 +108,7 @@
 </div>
 
 <div class="list up">
-<figure><img src="./練習/img/th.jfif" alt=""></figure>
+<figure><img src="./練習/img/menu_07.jfif" alt=""></figure>
 <div class="text">
 <h4>フルーツクレープ<span class="price">600yen</span></h4>
 <p>季節のフルーツがたくさんのクレープ</p>
@@ -94,7 +116,7 @@
 </div>
 
 <div class="list up">
-<figure><img src="./練習/img/cake02.jpg" alt=""></figure>
+<figure><img src="./練習/img/menu_08.jpg" alt=""></figure>
 <div class="text">
 <h4>ストロベリーケーキ<span class="price">600yen</span></h4>
 <p>国産イチゴを使用したケーキ</p>
@@ -102,7 +124,7 @@
 </div>
 
 <div class="list up">
-<figure><img src="./練習/img/dessert-3331009_1280.jpg" alt=""></figure>
+<figure><img src="./練習/img/menu_09.jpg" alt=""></figure>
 <div class="text">
 <h4>ティラミス<span class="price">600yen</span></h4>
 <p>おいしいティラミス</p>
@@ -125,10 +147,8 @@
 <!--/#copyright-->
 
 </footer>
-<!--ハンバーガーアイコン-->
-<div id="menubar_hdr">
-<span></span><span></span><span></span>
-</div>
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
 
 </body>
 </html>

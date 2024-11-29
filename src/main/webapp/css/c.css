@@ -6,6 +6,10 @@ summary {
   padding: 10px;
 } 
 
+#a {
+	margin-bottom: 5%;
+}
+
 .m {
 	text-align: center;
 	top: 5%;
@@ -46,3 +50,5 @@ body:not(.home) header {
 	align-items: center;
 	padding: 0rem 0vw;	/*上下、左右への画像の余白。*/
 }
+
+/*--------------------------------------------------------------------------*/

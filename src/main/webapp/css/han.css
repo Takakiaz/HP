@@ -87,3 +87,32 @@
 #drawer_input:checked ~ .nav_content {
   left: 85%;/* メニューを画面に入れる */
 }
+
+/*---------------------------------------------------------------------------------------------------*/
+/***追従するトップへ戻るボタン***/
+/*HTML		bodyへ <a href="#" id="page-top">TOP</a>	を入れるとボタンが表示されます*/
+#page-top {
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: rgb(104, 104, 104);
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+}
+#page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 1px;
+    transform: rotate(35deg);
+    transform-origin: left top;
+}

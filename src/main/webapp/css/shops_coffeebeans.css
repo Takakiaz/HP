@@ -120,12 +120,17 @@ body {
 /*一番上の画像について
 ---------------------------------------------------------------------------*/
 .menu{ 
-	background-image: url(../img/coffee_title.jpeg);
+	background-image: url(../img/coffee_title1.jpeg);
 	text-align: center; 
 	width: 100%;
 	height: 350px; 
 	color: white;
 	margin-bottom:40px;
+	white-space: nowrap; /* 折り返しを防ぐ */ 
+	overflow: hidden; /* コンテナからのはみ出しを防ぐ */ 
+	display: flex; /* フレックスボックスの設定 */ 
+	justify-content: center; /* コンテンツを中央に配置 */
+	background-size: cover;
 } 
 
 .menu h1 { 

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+
+
+/*h2見出し*/
+h2 {
+	position: relative;
+	text-align: center;		/*テキストをセンタリング*/
+	margin: 20px 10px 20px;		/*h2の外側にとるスペース。上、左右、下への順番。*/
+	font-size: 2rem;		/*文字サイズ*/
+	font-weight: 500;		/*文字の太さ。100から900まで指定可能。*/
+	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くする*/
+	color: #6f4b3e;
+}
+
+
+body {
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	-webkit-text-size-adjust: none;
+	background: #fffacd;
+	line-height: 2;		/*行間*/
+	color: #6f4b3e;
+
+}
+/*説明文*/
+.comment {
+	position: relative;
+	text-align: center;		/*テキストをセンタリング*/
+	margin: 10px 10px 20px;		/*余白。上、左右、下への順番。*/
+	font-size: 14px;		/*文字サイズ*/
+	letter-spacing: 0.05em;	/*文字間隔を少しだけ広くする*/
+	}
+
+
+/*テーブル（ta1）
+---------------------------------------------------------------------------*/
+/*テーブル１行目に入った見出し部分（※caption）*/
+.ta1 caption {
+	font-weight: bold;		/*太字に*/
+	padding: 0.5rem 1rem;	/*ボックス内の余白*/
+	margin-bottom: 1rem;	/*下に空けるスペース*/
+	border-radius: 5px;		/*角を丸くする指定*/
+}
+
+/*ta1テーブルブロック設定*/
+.ta1 {
+	table-layout: fixed;
+	border-collapse:collapse;
+	border-top: 1px solid #6f4b3e;	/*テーブルの一番上の線。幅、線種、色*/
+	width: 90%;				/*幅*/
+	margin:auto;
+	margin-bottom: 1rem;			/*テーブルの下に空けるスペース*/
+}
+
+/*tr（１行分）タグ設定*/
+.ta1 tr {
+	border-bottom: 1px solid #6f4b3e;	/*テーブルの下線。幅、線種、色*/
+}
+
+/*th（左側）、td（右側）の共通設定*/
+.ta1 th, .ta1 td {
+	padding: 1rem;		/*ボックス内の余白*/
+	word-break: break-all;	/*英語などのテキストを改行で自動的に折り返す設定。これがないと、テーブルを突き抜けて表示される場合があります。*/
+}
+
+/*th（左側）のみの設定*/
+.ta1 th {
+	width: 20%;			/*幅*/
+	text-align: left;	/*左よせにする*/
+}
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+
+		/*th（左側）のみの設定*/
+		.ta1 th {
+			width: 20%;		/*幅*/
+		}
+
+	}/*追加指定ここまで*/
+
+	.ws {width: 100%;display: block;}
+	.wl {width: 100%;display: block;}
+	
+.sendbtn{
+	text-align:center;
+}

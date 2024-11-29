@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>スペシャルブレンド</title>
 <link rel="stylesheet" href="./css/coffeebeans_item_01.css">
+<link rel="stylesheet" href="./css/han.css">
 <script type="text/javascript">
 	<!--
 		 window.addEventListener('DOMContentLoaded',function(){
@@ -24,21 +25,27 @@
 <body>
 	<div>
 		<header class="header">
-			<div class="header_menu">
-				<a href=""></a>
+			<div>
+				<a href="./top.html"><img src="./img/nikukyu_mike.png" width="50px" height="50px">ロゴ代用</a>
 			</div>
-			<div class="header_logo">
-				<p></p>
-			</div>
-			<label for="drower_input"><span></span></label>
+			<div class="nav">
+		     <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+		     <input id="drawer_input" class="drawer_hidden" type="checkbox">
+		 
+		     <!-- ハンバーガーアイコン -->
+		     <label for="drawer_input" class="drawer_open"><span></span></label>
+		 
+		     <!-- メニュー -->
 			<nav class="nav_content">
-				<ul class="nav_list">
-					<li class="nav_item"><a href="">メニュー</a></li>
-					<li class="nav_item"><a href="">アカウント</a></li>
-					<li class="nav_item"><a href="">オンラインショップ</a></li>
-					<li class="nav_item"><a href="">お問い合わせ</a></li>
-				</ul>
-			</nav>
+		       <ul class="nav_list">
+		         <li class="nav_item"><a href="./top_index.html">HOME</a></li>
+		         <li class="nav_item"><a href="">MENU</a></li>
+		         <li class="nav_item"><a href="">SHOP</a></li>
+				 <li class="nav_item"><a href="">BOOK</a></li>
+				 <li class="nav_item"><a href="">EVENT</a></li>
+		       </ul>
+			</nav>		   
+			</div>
 		</header>
 		<main>
 			<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -49,13 +56,19 @@
 			    </a>
 			    <meta itemprop="position" content="1" />
 			  </li>
-
 			  <li itemprop="itemListElement" itemscope
 			      itemtype="https://schema.org/ListItem">
 			    <a itemprop="item" href="./shops_coffeebeans.html">
 			        <span itemprop="name">すべてのコーヒー豆</span>
 			    </a>
 			    <meta itemprop="position" content="2" />
+			  </li>
+			  <li itemprop="itemListElement" itemscope
+			      itemtype="https://schema.org/ListItem">
+			    <a itemprop="item" href="">
+			        <span itemprop="name">スペシャルブレンド　500g</span>
+			    </a>
+			    <meta itemprop="position" content="3" />
 			  </li>
 			</ol>
 			<nav class="main_nav_wrapper">
@@ -70,11 +83,11 @@
 					<div class="details_main">
 						<div class="gallery">
 						    <div class="gallery-img">
-						        <img src="./img/coffeebeans_01.jpg" alt="" id="js-image-target">
+						        <img src="./img/coffeebeans_special_01.jpg" alt="" id="js-image-target">
 						    </div>
 						    <ul class="gallery-list">
 						        <li class="gallery-list-item">
-						            <button class="js-image"><img src="./img/coffeebeans_01.jpg" alt=""></button>
+						            <button class="js-image"><img src="./img/coffeebeans_special_01.jpg" alt=""></button>
 						        </li>
 						        <li class="gallery-list-item">
 						            <button class="js-image"><img src="./img/coffeebeans_special_02.jpg" alt=""></button>
@@ -98,6 +111,14 @@
 								<br/>
 								etc.
 							</p>
+						</div>
+						<div class="details_cart">
+							<div class="details_cart_selects">
+								<div class="details_cart_select">
+									
+								</div>
+							</div>
+							<a href="" class="details_cart_btn">
 						</div>
 					</div>
 				</div>

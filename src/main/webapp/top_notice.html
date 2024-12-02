@@ -1,29 +1,74 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang=”ja”>
 <head>
 <meta charset="UTF-8">
-<title>お知らせ一覧</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ここにサイト説明を入れます">
-<link rel="stylesheet" href="./css/top_style.css">
+<title>おいしい珈琲屋さん お知らせ一覧</title>
+	<link rel="stylesheet" href="./css/han.css" type="text/css">
+	<link rel="stylesheet" href="./css/c.css" type="text/css">
+	<link rel="stylesheet" href="./css/top_style.css" type="text/css">
 </head>
-<body class="home">
-<div id="container">
-<div id="trigger-point">
-	
-<header>
-<h1 id="logo"><a href="./top_index.html"><img src="./images/top_icon1.png"></a></h1>
-<div class="banner">
-<img src="./images/tops_ban.png" alt="">
-</div></header></div></div><p></p>
-<img src="./images/top_notice1.png"width=""height="350">
-<p></p>
+<body>
+	<!-- ハンバーガーメニューはじめ-->
+	<header class="header">
+		<div>
+			<a href="./top_index.html"><img src="./img/icon.png" width="70px" height="70px"></a>
+		</div>
+	   <div class="nav">
+	     <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+	     <input id="drawer_input" class="drawer_hidden" type="checkbox">
+	 
+	     <!-- ハンバーガーアイコン -->
+	     <label for="drawer_input" class="drawer_open"><span></span></label>
+	 
+	     <!-- メニュー -->
+	     <nav class="nav_content">
+	       <ul class="nav_list">
+	         <li class="nav_item"><a href="./top_index.html">HOME</a></li>
+	         <li class="nav_item"><a href="./menu_cafe.html">MENU</a></li>
+	         <li class="nav_item"><a href="./shops_coffeebeans.html">SHOP</a></li>
+			 <li class="nav_item"><a href="./book.html">BOOK</a></li>
+			 <li class="nav_item"><a href="./event.html">EVENT</a></li>
+	       </ul>
+	     </nav>		   
+	   </div>
+	 </header>
+	 <!-- ハンバーガーメニュー終わり-->
+
 
 <div id="container">
-	<p>・<a href="../task_take/top_notice_close.html">閉店のお知らせ</a>
-	<p>・<a href="../task_take/top_notice_open.html">開店のお知らせ</a>
-	<p>・<a href="../task_take/top_notice_point.html">ポイントの利用方法</a>
-	<p>・閉店のお知らせ</p>
+<div id="trigger-point">
+
+</div>
+
+<main class="column">
+
+<div class="main-contents">
+
+<section class="blur">
+
+<h2><span class="uline">お知らせ一覧</span><span class="small">News</span></h2>
+
+<dl class="new">
+<dt>2024/11/30<span class="icon-bg1">重要</span></dt>
+<dd><a href="./top_notice_close.html" class="news__a">閉店のお知らせ</a></dd>
+<dt>2024/10/22<span>お知らせ</span></dt>
+<dd><a href="./top_notice_open.html" class="news__a">開店のお知らせ</a></dd>
+<dt>2024/07/09<span>お知らせ</span></dt>
+<dd><a href="./top_accese.html" class="news__a">アクセスマップ</a></dd>
+<dt>2024/07/09<span class="icon-bg1">重要</span></dt>
+<dd><a href="./top_notice_point.html" class="news__a">ポイントの利用方法</a></dd>
+</dl>
+</section>
+</div>
+
+</main>
+
 </div>
 <div align="center">
 <a href="../task_take/top_index.html">もどる</a></div>
+
+
+<footer>
+<small>Copyright&copy; <a href="./top_index.html">おいしい珈琲屋さん</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>

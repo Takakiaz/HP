@@ -75,7 +75,7 @@ section li {margin-left: 1rem;}
 table {border-collapse:collapse;}
 
 /*画像全般の設定*/
-img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+img {border: none;max-width:80%;height: auto;vertical-align: middle;}
 
 /*videoタグ*/
 video {max-width: 100%;}
@@ -133,14 +133,14 @@ header {
 #logo {margin: 0;padding: 0;}
 #logo img {
 	display: block;
-	width: 100px;	/*ロゴ画像の幅*/
+	width: 70px;	/*ロゴ画像の幅*/
 }
 
 /*ヘッダーの中央バナー*/
 header .banner {
-	max-width: 1000px;	/*最大幅。これ以上広くならない。*/
+	max-width: 600px;	/*最大幅。これ以上広くならない。*/
 	flex: 1;
-	margin: 0 3vw;		/*上下、左右へのバナーの外側へとるスペース*/
+	margin: 0 0vw;		/*上下、左右へのバナーの外側へとるスペース*/
 }
 
 /*電話番号ブロック*/
@@ -578,7 +578,7 @@ main h3 {
 .iframe-box {
 	width: 100%;
 	height: 0;
-	padding-top: 56.25%;	/*マップの高さを増やしたい場合は、ここの数値を上げてみて下さい。*/
+	padding-top: 50%;	/*マップの高さを増やしたい場合は、ここの数値を上げてみて下さい。*/
 	position: relative;
 	overflow: hidden;
 }
@@ -1158,3 +1158,5 @@ ul.icons {
 	.pc {display: block;}
 
 	}/*追加指定ここまで*/
+	
+

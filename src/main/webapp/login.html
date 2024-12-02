@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ログイン</title>
+		<link rel="stylesheet" href="./css/top_style.css" type="text/css">
+	</head>
+	<body>
+		<div style="margin-left: 20%;margin-right: 20%;margin-bottom: 40%;margin-top: 50px;">
+		<div style="  text-align: center; float: left;margin-left: 15%;margin-right: 15%;padding-top: 10%;padding-bottom: 10%;">
+			<h1>ログイン</h1>
+		</div>
+		<div style="margin-top: 0px;margin-right: 15%;margin-bottom: 0px; padding-top: 10%;padding-bottom: 10%;margin-left: 15%;">
+			<form id="login" name="login" action="login_top_index.html" method="post" onsubmit="return check();">
+				ID:<br/>
+				<input type="text" name="id" style="margin-bottom: 15px;"><br/>
+				パスワード:<br/>
+				<input type="password" name="pass"><br/>
+			
+				<input type="submit" value="ログイン" style="margin-top: 5%;margin-right: 5%;">
+				<a href="./top_index.html">戻る</a>
+				
+				<script type="text/javascript" src="./login.js"></script>
+			</form>
+		</div>
+		</div>
+	</body>
+</html>

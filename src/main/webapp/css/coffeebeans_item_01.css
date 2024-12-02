@@ -113,6 +113,37 @@ body {
 }
 /*　ヘッダー */
 
+/*一番上の画像について
+---------------------------------------------------------------------------*/
+.menu{ 
+	background-image: url(../img/coffee_title1.jpeg);
+	image-rendering: -webkit-optimize-contrast;
+	text-align: center; 
+	width: 100%;
+	height: 350px;
+	color: white;
+	margin-bottom:10px;
+	white-space: nowrap; /* 折り返しを防ぐ */ 
+	overflow: hidden; /* コンテナからのはみ出しを防ぐ */ 
+	display: flex; /* フレックスボックスの設定 */ 
+	justify-content: center; /* コンテンツを中央に配置 */
+	background-size: cover;
+} 
+
+.menu h1 { 
+	font-size:4rem; /* フォントサイズを4倍に設定*/ 
+	padding-top: 3cm;
+	color: #FFFACD; /* 文字色をFFFACDに設定 */
+}
+
+body:not(.home) header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0rem 0vw;	/*上下、左右への画像の余白。*/
+}
+
+
 
 .breadcrumb {
 	margin: 0 10px;
@@ -124,6 +155,8 @@ body {
   display: inline;/*横に並ぶように*/
   list-style: none;
   font-weight: bold;
+  font-size: 14px;
+  color: #555;/*色*/
 }
 
 .breadcrumb li:after {/* >を表示*/
@@ -189,6 +222,10 @@ body {
 	margin-right: 50px;
 }
 
+.gallery-img {
+	
+}
+
 .gallery-img img {
 	border-radius: 30px;
 	width: 300px;
@@ -196,6 +233,14 @@ body {
 }
 
 .gallery-list-item {
+	border-radius: 30px;
+	width: 150px;
+	height: 150px;
+}
+
+
+
+.gallery-list-item img {
 	border-radius: 30px;
 	width: 150px;
 	height: 150px;
@@ -209,6 +254,31 @@ body {
 	font-weight: bold;
 }
 
+.details_cart {
+	background-color: #f7f7f7;
+	margin-top: 40px;
+	padding: 20px 30px;
+	font-size: 15px;
+}
+
+.details_cart_selects select {
+    width: 90%;
+}
+
+.details_cart_btn {
+
+}
+
+.details_cart a {
+	background-color: orange;
+	
+	padding: 10px 100px;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #FFFFFF;
+	line-height: 30px;
+	text-align: center;
+}
 
 
 /*フッター共通

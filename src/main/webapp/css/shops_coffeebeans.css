@@ -121,6 +121,7 @@ body {
 ---------------------------------------------------------------------------*/
 .menu{ 
 	background-image: url(../img/coffee_title1.jpeg);
+	image-rendering: -webkit-optimize-contrast;
 	text-align: center; 
 	width: 100%;
 	height: 350px; 

@@ -9,180 +9,201 @@
 <link rel="stylesheet" href="./css/Modal_login.css">
 </head>
 
-<body class="home">
-	<div id="myModal" class="modal">
-	  <div class="modal-content">
-	    <span class="close-button">×</span>
-	    テストユーザー　さん<br/>
-		おかえりなさい。
-		<!--<div class="modal-title">テストユーザーさん　おかえりなさい。</div>-->
-	  </div>
-	</div>
 
+	<body class="home">
 
-	<script>
-	var modal = document.getElementById("myModal");
-	var closeButton = document.querySelector(".close-button");
-
-	window.onload = function() {
-	  setTimeout(function() {
-	    modal.style.display = "block";
-	  }, 2000);
-	}
-
-	closeButton.onclick = function() {
-	  modal.style.display = "none";
-	}
-
-	window.onclick = function(event) {
-	  if (event.target == modal) {
-	    modal.style.display = "none";
-	  }
-	}
-	</script>
-
-	
-<div id="container">
-
-<div id="trigger-point">
-
-<header>
-
-<h1 id="logo"><a href="index.html"><img src="./images/top_icon1.png"></a></h1>
-
-<div class="banner">
-<img src="./images/tops_ban.png" alt="">
-</div>
-
-<span class="login"><a href="./top_login_01.html" class="login">ログイン</a><br><a href="../sample/ポイントの利用方法.html" class="member">会員登録</a></span>
-
-</header>
-</div>
-<!--/#trigger-point-->
-
-
-
-<!--開閉ブロック-->
-
-
-<p></p>
-<section>
-<h2 class="dn">ギャラリー</h2>
-<div class="thumbnail-slide">
-<a href="#"><img src="./images/top_rotation01.jfif" alt=""></a>
-<a href="#"><img src="./images/top_rotation02.jfif" alt=""></a>
-<a href="#"><img src="./images/top_rotation03.jpg" alt=""></a>
-<a href="#"><img src="./images/top_rotation01.jfif" alt=""></a>
-<a href="#"><img src="./images/top_rotation02.jfif" alt=""></a>
-<a href="#"><img src="./images/top_rotation03.jpg" alt=""></a>
-</div>
-
-</section>
-
-<main class="column">
-
-<div class="main-contents">
-
-<section class="blur">
-
-<h2><span class="uline">お知らせ</span><span class="small">News</span></h2>
-
-<dl class="new">
-<dt>2024/07/09<span>お知らせ</span></dt>
-<dd><a href="./top_notice_point.html" class="news__a">ポイントの利用方法</a></dd>
-<dt>20XX/00/00<span class="icon-bg1">重要</span></dt>
-<dd><a href="./top_notice_close.html" class="news__a">閉店のお知らせ</a></dd>
-<dt>2024/07/09<span>お知らせ</span></dt>
-<dd><a href="./top_notice_open.html" class="news__a">アクセスマップ</a></dd>
-<dt>2024/07/09<span>お知らせ</span></dt>
-<dd><a href="./top_notice_close.html" class="news__a">開店のお知らせ</a></dd>
-</dl>
-</section>
-		<p class="btnMore"><a href="../task_take/top_notice.html"><span>MORE</span></a></p>
+		<div id="myModal" class="modal">
+		  <div class="modal-content">
+		    <span class="close-button">×</span>
+		    テストユーザー　さん<br/>
+			おかえりなさい。
+			<!--<div class="modal-title">テストユーザーさん　おかえりなさい。</div>-->
+		  </div>
 		</div>
 
-</main>
 
-</div>
-<!--/#contents-->
+		<script>
+		var modal = document.getElementById("myModal");
+		var closeButton = document.querySelector(".close-button");
 
-<div align="center" class="auto">
-	<!--index.htmlにリンク先URLを設定する-->
-	<!--別タブで開く際は「target="_blank」を追加予定-->
-<a href="index.html"><img src="./images/top_menu.png"alt="link01"width="200"></a>
-<a href="index.html"><img src="./images/top_shop.png"alt="link02"width="200"></a>
-<a href="index.html"><img src="./images/top_book.png"alt="link03"width="200"></a>
-<a href="index.html"><img src="./images/top_event.png"alt="link04"width="200"></a>
-</div>
+		window.onload = function() {
+		  setTimeout(function() {
+		    modal.style.display = "block";
+		  }, 2000);
+		}
 
-<!--/#container-->
-<p></p>
+		closeButton.onclick = function() {
+		  modal.style.display = "none";
+		}
 
-<p></p>
-<div id="footer-contents">
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+		    modal.style.display = "none";
+		  }
+		}
+		</script>
+		
+	<div id="container">
 
-<div class="left">
+	<div id="trigger-point">
 
-<h3><img src="./images/top_f2.png" alt="おいしい珈琲屋さん" class="wl"width="200"></h3>
-<p>福岡県福岡市中央区XXXXX１丁目１号<br>
-代表電話：000-0000-0000<br>
+		<header>
+			<img src="./img/icon2.png" width="800" usemap="#ImageMap" alt="" />
+			<map name="ImageMap">
+			  <area shape="rect" coords="18,5,100,80" href="./top_index.html" alt="" />
+			</map>
 
-営業時間：7:00〜16:00（LO 15:30）<br>
+	<span class="login"><a href="./login.html" class="login"style="text-decoration:none;">ログイン</a>
+		&emsp;&emsp;<a href="../sample/ポイントの利用方法.html" class="member"style="text-decoration:none;">会員登録</a></span>
 
-<ul class="icons">
-<li><a href="https://x.com/?lang=ja"target=”_blank><i class="fa-brands fa-x-twitter"></i></a></li>
-<li><a href="https://line.me/ja/"target=”_blank><i class="fab fa-line"></i></a></li>
-<li><a href="https://www.youtube.com/?app=desktop&hl=ja"target=”_blank><i class="fab fa-youtube"></i></a></li>
-<li><a href="https://www.instagram.com/?locale=ja_JP"target=”_blank><i class="fab fa-instagram"></i></a></li>
-</ul>
+	<div class="nav">
+		     <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+		     <input id="drawer_input" class="drawer_hidden" type="checkbox">
+		 
+		     <!-- ハンバーガーアイコン -->
+		     <label for="drawer_input" class="drawer_open"><span></span></label>
+		 	
+		     <!-- メニュー -->
+		     <nav class="nav_content">
+		       <ul class="nav_list">
+		         <li class="nav_item"><a href="./top_index.html">HOME</a></li>
+		         <li class="nav_item"><a href="./menu_cafe.html">MENU</a></li>
+		         <li class="nav_item"><a href="./shops_coffeebeans.html">SHOP</a></li>
+				 <li class="nav_item"><a href="./book.html">BOOK</a></li>
+				 <li class="nav_item"><a href="./event.html">EVENT</a></li>
+		       </ul>
+		     </nav>		   
+	 </div>
+	</header>
+	</div>
+	<!--/#trigger-point-->
 
-</div>
-<!--/.left-->
-
-<div class="right">
-
-アクセスMAP
-<div class="iframe-box">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4910741507265!2d130.39375326601376!3d33.59256074925947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541913a138f36f9%3A0xfc9028c55a16960f!2z5Ym16YCg56S-44Oq44Kr44Os44Oz44OI44K544Kv44O844OrIOemj-WyoeagoQ!5e0!3m2!1sja!2sjp!4v1666265166811!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
-</div>
-</div>
+	<!--開閉ブロック-->
+
+
+	<p></p>
+	<section>
+	<h2 class="dn">ギャラリー</h2>
+	<div class="thumbnail-slide">
+	<a href="#"><img src="./img/top_rotation01.jfif" alt=""></a>
+	<a href="#"><img src="./img/top_rotation02.jfif" alt=""></a>
+	<a href="#"><img src="./img/top_rotation03.jpg" alt=""></a>
+	<a href="#"><img src="./img/top_rotation01.jfif" alt=""></a>
+	<a href="#"><img src="./img/top_rotation02.jfif" alt=""></a>
+	<a href="#"><img src="./img/top_rotation03.jpg" alt=""></a>
+	</div>
+
+	</section>
+
+	<main class="column">
+
+	<div class="main-contents">
+
+	<section class="blur">
+
+	<h2><span class="uline">お知らせ</span><span class="small">News</span></h2>
+
+	<dl class="new">
+	<dt>2024/11/30<span class="icon-bg1">重要</span></dt>
+	<dd><a href="./top_notice_close.html" class="news__a">閉店のお知らせ</a></dd>
+	<dt>2024/10/22<span>お知らせ</span></dt>
+	<dd><a href="./top_notice_open.html" class="news__a">開店のお知らせ</a></dd>
+	<dt>2024/07/09<span>お知らせ</span></dt>
+	<dd><a href="./top_accese.html" class="news__a">アクセスマップ</a></dd>
+	<dt>2024/07/09<span class="icon-bg1">重要</span></dt>
+	<dd><a href="./top_notice_point.html" class="news__a">ポイントの利用方法</a></dd>
+
+	</dl>
+	</section>
+			<p class="btnMore"><a href="./top_notice.html"><span>MORE</span></a></p>
+			</div>
+
+	</main>
+
+	</div>
+	<!--/#contents-->
+
+	<div align="center" class="auto">
+		<!--index.htmlにリンク先URLを設定する-->
+		<!--別タブで開く際は「target="_blank」を追加予定-->
+	<a href="./menu_cafe.html"><img src="./img/top_menu.png"alt="link01"width="200"></a>
+	<a href="./shops_coffeebeans.html"><img src="./img/top_shop.png"alt="link02"width="200"></a>
+	<a href="./book.html"><img src="./img/top_book.png"alt="link03"width="200"></a>
+	<a href="./event.html"><img src="./img/top_event.png"alt="link04"width="200"></a>
+	</div>
+
+	<!--/#container-->
+	<p></p>
+
+	<p></p>
+
+	<!--/.right-->
+
+
+	<!--/#footer-contents-->
+
+
+	<!--/#footermenu-->
+	<div id="footer-contents">
+
+	<div class="left">
+
+	<h3><img src="./img/top_f2.png" alt="おいしい珈琲屋さん" class="wl"width="200"></h3>
+	<p>福岡県福岡市中央区XXXXX１丁目１号<br>
+	代表電話：000-0000-0000<br>
+
+	営業時間：7:00〜16:00（LO 15:30）<br>
+
+	<ul class="icons">
+	<li><a href="https://x.com/?lang=ja"target=”_blank><i class="fa-brands fa-x-twitter"></i></a></li>
+	<li><a href="https://line.me/ja/"target=”_blank><i class="fab fa-line"></i></a></li>
+	<li><a href="https://www.youtube.com/?app=desktop&hl=ja"target=”_blank><i class="fab fa-youtube"></i></a></li>
+	<li><a href="https://www.instagram.com/?locale=ja_JP"target=”_blank><i class="fab fa-instagram"></i></a></li>
+	</ul>
+
+	</div>
+	<!--/.left-->
+
+	<div class="right">
+
+	アクセスMAP
+	<div class="iframe-box">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4910741507265!2d130.39375326601376!3d33.59256074925947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541913a138f36f9%3A0xfc9028c55a16960f!2z5Ym16YCg56S-44Oq44Kr44Os44Oz44OI44K544Kv44O844OrIOemj-WyoeagoQ!5e0!3m2!1sja!2sjp!4v1666265166811!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+	</div>
+	</div>
+		
+	</div>
+	<a href="#" id="page-top">TOP</a>
+	<footer>
+	<small>Copyright&copy; <a href="./top_index.html">おいしい珈琲屋さん</a> All Rights Reserved.</small>
+	<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+	</footer>
+
+	<!--ページの上部へ戻るボタン-->
+	<!--<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>-->
+
+
+	<!--jQueryの読み込み-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--文字サイズチェンジ用のスクリプト-->
+	<script src="js/fontSizeChanger.js"></script>
+
+	<!--スライドショー（slick）-->
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="./js/top_slick.js"></script>
+
+	<!--パララックス（inview）-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+	<script src="js/jquery.inview_set.js"></script>
+
+	<!--このテンプレート専用のスクリプト-->
+	<script src="js/main.js"></script>
 	
-</div>
-<!--/.right-->
-
-
-<!--/#footer-contents-->
-
-
-<!--/#footermenu-->
-
-<footer>
-<small>Copyright&copy; <a href="../task_take/top_index.html">おいしい珈琲屋さん</a> All Rights Reserved.</small>
-<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
-</footer>
-
-<!--ページの上部へ戻るボタン-->
-<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
-
-
-<!--jQueryの読み込み-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!--文字サイズチェンジ用のスクリプト-->
-<script src="js/fontSizeChanger.js"></script>
-
-<!--スライドショー（slick）-->
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="./js/top_slick.js"></script>
-
-<!--パララックス（inview）-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-<script src="js/jquery.inview_set.js"></script>
-
-<!--このテンプレート専用のスクリプト-->
-<script src="js/main.js"></script>
-
 </body>
 </html>

@@ -1,15 +1,12 @@
 @charset "UTF-8";
 
 
-
-
 /*全体の設定
 ---------------------------------------------------------------------------*/
 body * {box-sizing: border-box;}
 html,body {
 	font-size: 14px;	/*基準となるフォントサイズ。*/
 }
-
 
 body {
 	margin:0 ;padding:0;
@@ -18,23 +15,30 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	-webkit-text-size-adjust: none;
-	background: #FFFACD;
+	background: #FFFACD;/*背景色*/
 	color: #6F4B3E;/*文字色*/
 	line-height: 2;		/*行間*/
 }
 
-/*全体の両サイドの余白*/
+/*画像全般の設定
+---------------------------------------------------------------------------*/
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+/*border:none＝枠線なし、
+max-widtf=画面の幅に対して画像を最大限広げる、
+height: auto＝画像の高さ自動調節、
+vertical-align: middle＝画像が画面の中央に表示*/
+
+
+
+/*全体の両サイドの余白
+---------------------------------------------------------------------------*/
 main {
-	margin: 5vw;	/*全体の外側に空けるスペース。*/
+	margin: 5vw;	/*全体の外側に余白を空けるスペース。*/
 }
 
 
-/*画像全般の設定、border:none＝枠線なし、max-widtf=画面の幅に対して画像を最大限広げる、height: auto＝画像の高さ自動調節、vertical-align: middle＝画像が画面の中央に表示*/
-img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
-
-
-
-
+/*ページタイトルの設定
+---------------------------------------------------------------------------*/
 .pagetitle{
 	background-image: url(./img/event_pagetitle03.png);
 	color: #fffacd;
@@ -50,21 +54,22 @@ img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 	color: #FFFACD; /* 文字色をFFFACDに設定 */
 	}
 	
-/* カレンダー */
+/* 「イベントカレンダー」エリアの設定
+---------------------------------------------------------------------------*/
 .calendar-table {
   width: 90%;
+  margin: auto; /* カレンダーを中央寄せ */
 }
 
 
-
-/* 二重線を重ねて一重線にしたいとき */
+/* カレンダーの枠線の二重線を重ねて一重線にしたいとき */
 table, td, th {
   border: 1px solid #6f4b3e;
   border-spacing:0;
   border-collapse:collapse;
 }
 
-
+/* thの設定 */
 table,th{
 	text-align: center;
 	font-size: 16px;
@@ -73,6 +78,7 @@ table,th{
 	background-color: #f3f3f3;
 }
 
+/* tdの設定 */
 table,td{
 	text-align: left;
 	font-size: 16px;
@@ -80,32 +86,37 @@ table,td{
 	background-color: white;
 }
 
+/* 日付(th)のフォントカラー設定 */
 .DAY{
-	color: #6f4b3e;	
+	color: #6f4b3e;	/* 平日 */
 }
-
 .SUN{
-	color: #b12727;
+	color: #b12727;/* 日曜日 */
 }
 .SAT{
-	color: #6298e7;
+	color: #6298e7;/* 土曜日 */
 }
 
-.time{
-	text-align: left;
-	font-size: 14px;
-}
-
+/* イベント名のテキスト設定 */
 .eventname{
 	text-align: left;
 	font-weight: bold;
 	font-size: 16px;
 }
 
-.flex {
-  display: flex; /*横並び*/
+/* 時間のテキスト設定 */
+.time{
+	text-align: left;
+	font-size: 14px;
 }
 
+/* 「イベントをお考えの方へ」エリアの設定
+---------------------------------------------------------------------------*/
+.flex {
+  display: flex; /*画像と文章を横並びにする*/
+}
+
+/* 画像サイズの設定 */
 .flex .image {
   width: 600px; /*画像サイズ指定*/
   margin: 0;
@@ -113,12 +124,15 @@ table,td{
   overflow: hidden;
   position: relative;
 }
+
+/* 右側の文章エリアの設定 */
 .flex .right {
   width: 740px;
   margin: 0 0 0 50px;
   padding: 0px;
 }
 
+/* 「お問い合わせはこちら」ボタンの設定 */
 .box {
     padding: 0.5em 1em;
     margin: 2em 0;
@@ -129,8 +143,25 @@ table,td{
     border-radius: 10px; /*角の丸み*/
 }
 .box p {
-    margin: 1em; 
-    padding: 1em;
+    margin: 1em; /*要素の外側、他の要素との間にあるスペース*/
+    padding: 1em;/*ボックス内の余白*/
 	
 
 }
+
+/*フッター設定
+---------------------------------------------------------------------------*/
+small {font-size: 100%;}
+footer {
+	font-size: 0.7rem;		/*文字サイズ*/
+	background: #1d1b1b;	/*背景色*/
+	color: #fff;			/*文字色*/
+	text-align: center;		/*内容をセンタリング*/
+	padding: 1rem;			/*ボックス内の余白*/
+}
+
+/*リンクテキスト*/
+footer a {color: inherit;text-decoration: none;}
+
+/*著作部分*/
+footer .pr {display: block;}
